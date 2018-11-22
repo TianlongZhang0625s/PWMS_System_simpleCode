@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A043463B-1222-48B5-8943-5385C025EDD0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PWMS_SYSTEM_V1._0</RootNamespace>
+    <AssemblyName>PWMS_SYSTEM_V1.0</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\PWMS_SYSTEM_V1.0.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;E:\Microsoft VS 2010\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;E:\Microsoft VS 2010\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\PWMS_SYSTEM_V1.0.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;E:\Microsoft VS 2010\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;E:\Microsoft VS 2010\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.Microsoft.Office.Core">
+      <HintPath>DLL_Word Lib\Interop.Microsoft.Office.Core.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.Office">
+      <HintPath>DLL_Word Lib\Interop.Office.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>DLL_Word Lib\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>DLL_Word Lib\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="Office, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>DLL_Word Lib\Office.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VBIDE">
+      <HintPath>DLL_Word Lib\VBIDE.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataClass\MyMeans.cs" />
+    <Compile Include="F_LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_LogIn.Designer.cs">
+      <DependentUpon>F_LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Main.Designer.cs">
+      <DependentUpon>F_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoAddForm\F_Address.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoAddForm\F_Address.Designer.cs">
+      <DependentUpon>F_Address.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoAddForm\F_Basic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoAddForm\F_Basic.Designer.cs">
+      <DependentUpon>F_Basic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoAddForm\F_ClewSet..cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoAddForm\F_ClewSet..Designer.cs">
+      <DependentUpon>F_ClewSet..cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleClass\MyModule.cs" />
+    <Compile Include="Perform\F_AddressList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perform\F_AddressList.Designer.cs">
+      <DependentUpon>F_AddressList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perform\F_ClearData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perform\F_ClearData.Designer.cs">
+      <DependentUpon>F_ClearData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perform\F_Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perform\F_Find.Designer.cs">
+      <DependentUpon>F_Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perform\F_HaveBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perform\F_HaveBack.Designer.cs">
+      <DependentUpon>F_HaveBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perform\F_ManFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perform\F_ManFile.Designer.cs">
+      <DependentUpon>F_ManFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perform\F_Stat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perform\F_Stat.Designer.cs">
+      <DependentUpon>F_Stat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perform\F_UserAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perform\F_UserAdd.Designer.cs">
+      <DependentUpon>F_UserAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perform\F_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perform\F_User.Designer.cs">
+      <DependentUpon>F_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perform\F_UserPope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perform\F_UserPope.Designer.cs">
+      <DependentUpon>F_UserPope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perform\F_WordPad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perform\F_WordPad.Designer.cs">
+      <DependentUpon>F_WordPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="F_LogIn.resx">
+      <DependentUpon>F_LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Main.resx">
+      <DependentUpon>F_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoAddForm\F_Address.resx">
+      <DependentUpon>F_Address.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoAddForm\F_Basic.resx">
+      <DependentUpon>F_Basic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoAddForm\F_ClewSet..resx">
+      <DependentUpon>F_ClewSet..cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perform\F_AddressList.resx">
+      <DependentUpon>F_AddressList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perform\F_ClearData.resx">
+      <DependentUpon>F_ClearData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perform\F_Find.resx">
+      <DependentUpon>F_Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perform\F_HaveBack.resx">
+      <DependentUpon>F_HaveBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perform\F_ManFile.resx">
+      <DependentUpon>F_ManFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perform\F_Stat.resx">
+      <DependentUpon>F_Stat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perform\F_UserAdd.resx">
+      <DependentUpon>F_UserAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perform\F_User.resx">
+      <DependentUpon>F_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perform\F_UserPope.resx">
+      <DependentUpon>F_UserPope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perform\F_WordPad.resx">
+      <DependentUpon>F_WordPad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\登录1.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\主界面.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataBase\" />
+    <Folder Include="DLL_Word Lib\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
